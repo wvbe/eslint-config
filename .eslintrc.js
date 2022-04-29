@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ['./base', './node', './jest'],
+	extends: ['./vanilla', './node', './jest'],
 };

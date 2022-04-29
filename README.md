@@ -23,16 +23,17 @@ following contents:
 
 ```js
 module.exports = {
-	extends: ['@wvbe/eslint-config/base'],
+	extends: ['@wvbe/eslint-config/vanilla'],
 };
 ```
 
 **Step 4:** Update `.eslintrc.js` to extend linting rules specific to your project type. Add any
 amount of the following strings to the `extends` array:
 
-- `@wvbe/eslint-config/base`, linting rules that apply to _any_ JavaScript project.
+- `@wvbe/eslint-config/vanilla`, linting rules that apply to _any_ JavaScript project.
 - `@wvbe/eslint-config/jest`, for the Jest test framework.
 - `@wvbe/eslint-config/node`, for NodeJS.
+- `@wvbe/eslint-config/typescript`, for TypeScript. Requires the `typescript` peer dependency.
 
 **Step 5:** Remove any JS formatting-related configuration from `.editorconfig`.
 
